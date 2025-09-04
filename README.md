@@ -1,27 +1,46 @@
-# EffectiveMobile
+# 🎬 Movies Catalog (Angular + Kinopoisk API)
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.0.6.
+Каталог фильмов с поиском, пагинацией и **lazy-загрузкой постеров**.  
+Работает на **Angular + Angular Material**, данные берутся с [Kinopoisk API Unofficial](https://kinopoiskapiunofficial.tech/).
 
-## Development server
+<p align="center">
+  <img src="docs/preview.png" alt="Превью приложения" width="800"/>
+</p>
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+---
 
-## Code scaffolding
+## 🚀 Возможности
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- 🔎 Поиск фильмов по названию
+- 📊 Каталог **ТОП-250 лучших фильмов**
+- 📑 Пагинация через Angular Material (с кастомными подписями)
+- 🖼 Lazy-загрузка постеров с **skeleton placeholder**
+- 📱 Адаптивный интерфейс (desktop + mobile)
+- ⚡ Высокая производительность (OnPush change detection)
+- 🔑 API-ключ добавляется автоматически через HTTP Interceptor
 
-## Build
+---
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## 🛠️ Технологии
 
-## Running unit tests
+- [Angular](https://angular.io/) 15+
+- [Angular Material](https://material.angular.io/)
+- [RxJS](https://rxjs.dev/)
+- [Kinopoisk API Unofficial](https://kinopoiskapiunofficial.tech/)
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+---
 
-## Running end-to-end tests
+## 📦 Установка и запуск
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+```bash
+# 1. Клонировать проект
+git clone https://github.com/your-repo/movies-catalog.git
+cd movies-catalog
 
-## Further help
+# 2. Установить зависимости
+npm install
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+# 3. Запустить приложение
+ng serve
+
+# Приложение будет доступно на http://localhost:4200/
