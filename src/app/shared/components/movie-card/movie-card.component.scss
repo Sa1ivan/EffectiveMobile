@@ -1,0 +1,77 @@
+.card {
+  background: #fff;
+  padding: .5rem;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, .06);
+  cursor: pointer;
+  display: grid;
+  gap: .5rem;
+}
+
+.card__media img {
+  width: 100%;
+  aspect-ratio: 2/3;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.card__placeholder {
+  width: 100%;
+  aspect-ratio: 2/3;
+  background: #f1f3f5;
+  border-radius: 8px;
+}
+
+.card__title {
+  margin: 0;
+  font-size: .95rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.card__meta {
+  color: #888;
+  font-size: .85rem;
+}
+
+.card__rating {
+  justify-self: end;
+  background: #f1f3f5;
+  padding: .2rem .5rem;
+  border-radius: 6px;
+  font-weight: 600;
+}
+
+.poster {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+  background: #eee;
+  transition: opacity 0.3s ease-in;
+}
+
+.poster[src*="http"] {
+  opacity: 1;
+}
+
+.skeleton {
+  background: linear-gradient(
+      90deg,
+      #e0e0e0 25%,
+      #f0f0f0 37%,
+      #e0e0e0 63%
+  );
+  background-size: 400% 100%;
+  animation: skeleton-loading 1.4s ease infinite;
+}
+
+@keyframes skeleton-loading {
+  0% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0 50%;
+  }
+}

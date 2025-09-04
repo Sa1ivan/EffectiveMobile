@@ -1,0 +1,17 @@
+<article
+  (click)="showModal()"
+  [attr.aria-label]="'Открыть ' + (movie.nameRu || movie.nameOriginal)"
+  class="card"
+  role="button"
+  tabindex="0"
+>
+  <div class="card__media">
+    <img *ngIf="movie.posterUrl" [alt]="movie.nameRu || movie.nameOriginal"
+         [lazySrc]="movie.posterUrl"
+         class="poster"/>
+    <div *ngIf="!movie.posterUrl" class="card__placeholder"></div>
+  </div>
+  <h3 class="card__title">{{ movie.nameRu || movie.nameOriginal }}</h3>
+  <p class="card__meta">{{ movie.year }}</p>
+  <div *ngIf="movie.ratingKinopoisk" class="card__rating">⭐{{ movie.ratingKinopoisk }}</div>
+</article>

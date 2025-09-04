@@ -1,0 +1,21 @@
+<div *ngIf="details$ | async as details; else loading" class="dialog">
+  <div class="left">
+    <img *ngIf="details.posterUrl" [src]="details.posterUrl" alt="{{details.nameRu || details.nameOriginal}}"/>
+  </div>
+  <div class="right">
+    <h2>{{ details.nameRu || details.nameOriginal }}</h2>
+    <p class="muted">{{ details.year }}</p>
+    <div *ngIf="details.genres?.length" class="chips">
+      <span *ngFor="let genres of details.genres" class="chip">{{ genres.genre }}</span>
+    </div>
+    <p class="desc">{{ details.description }}</p>
+    <div class="meta">
+      <span class="badge">KP: {{ details.ratingKinopoisk ?? '—' }}</span>
+      <span class="badge">IMDb: {{ details.ratingImdb ?? '—' }}</span>
+      <span *ngIf="details.filmLength" class="badge">⏱ {{ details.filmLength }} мин</span>
+    </div>
+  </div>
+</div>
+<ng-template #loading>
+  <div class="loading">Загрузка…</div>
+</ng-template>

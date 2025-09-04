@@ -1,0 +1,26 @@
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+}
+
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items:center;
+  padding: .5rem 1rem;
+  background: white;
+  color: #111;
+}
+
+.brand {
+  font-weight: 700;
+  text-decoration: none;
+  color: inherit;
+}
+
+.site-main {
+  padding: 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}

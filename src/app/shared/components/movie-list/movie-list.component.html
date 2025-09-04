@@ -1,0 +1,4 @@
+<section class="grid" *ngIf="movies?.length; else emptyTpl">
+  <app-movie-card *ngFor="let m of movies; trackBy: trackById" [movie]="m"></app-movie-card>
+</section>
+<ng-template #emptyTpl><p class="empty">Ничего не найдено</p></ng-template>
