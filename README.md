@@ -1,11 +1,7 @@
-# 🎬 Movies Catalog (Angular + Kinopoisk API)
+# 🎬 Movies Catalog for Effective Mobile (Angular + Kinopoisk API)
 
 Каталог фильмов с поиском, пагинацией и **lazy-загрузкой постеров**.  
 Работает на **Angular + Angular Material**, данные берутся с [Kinopoisk API Unofficial](https://kinopoiskapiunofficial.tech/).
-
-<p align="center">
-  <img src="docs/preview.png" alt="Превью приложения" width="800"/>
-</p>
 
 ---
 
@@ -23,7 +19,7 @@
 
 ## 🛠️ Технологии
 
-- [Angular](https://angular.io/) 15+
+- [Angular](https://angular.io/) 16+
 - [Angular Material](https://material.angular.io/)
 - [RxJS](https://rxjs.dev/)
 - [Kinopoisk API Unofficial](https://kinopoiskapiunofficial.tech/)
